@@ -1,16 +1,108 @@
-*,
-*::before,
-*::after {
-  box-sizing: content-box;
+html {
+  height: 100%;
 }
-
 body {
   margin: 0;
-  background-color: lightgray;
-  font-family: sans-serif;
+  padding: 0;
+  background-color: #383B40;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-#nike{
-  margin-left: 100px;
-  width: 100px
-  
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 118px;
+  text-align: center;
+}
+
+header img {
+animation: rotate 5s linear 1;
+}
+
+@keyframes rotate {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.400);
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.hauptmenu {
+  list-style: none;
+  padding: 0;
+}
+
+.hauptmenu li {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Abstand zwischen Hauptmenüpunkten */
+}
+
+.hauptmenu li a {
+  text-decoration: none;
+  color: white; 
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #383B40;
+  padding: 10px;
+}
+
+.hauptmenu li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  margin: 5px 0; /* Abstand zwischen Untermenüpunkten */
+}
+
+.submenu li a {
+  color: white;
+}
+main {
+ /* background-color: orange;*/
+  height: 400px;
+  text-align: center;
+  padding-top:80px;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  text-align: left;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+p {
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
