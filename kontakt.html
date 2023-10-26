@@ -2,48 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Define the character encoding of the document as UTF-8. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <!-- Set the viewport configuration for responsive design. -->
+    <title>Contact</title>
+    <!-- Specify the document title as "Contact." -->
     <link rel="stylesheet" href="kontakt_style.css">
+    <!-- Link to an external CSS file for styling. -->
 </head>
 <body>
-    
-    
-    
-    <div class="container">      
-<form>
-    <h1>Contact &amp; Inquiries</h1>
-    <br><br>
-    <p> I'm looking forward to your message.</p> 
-    <p>You can either use this contact form or write me directly at 
-        <a href="mailto:elisabeth@gmail.de">elisabeth@gmail.com</a></p> 
-    <p>I'll try to respond as soon as possible.</p>
-    <p>Until then, I wish you a wonderful day!</p>
-    <p> Best regards, Your Elisabeth!</p>
-        <br>
-        <br>
-    <div class="row">
-        <div class="input-group">
-            <input type="text" id="name" required>
-            <label for="name">Your Name</label>
-        </div>
-        <div class="input-group">
-            <input type="text" id="number" required>
-            <label for="number">Phone No.</label>
-        </div>
+    <div class="container">
+        <!-- Create a container div to structure the content. -->
+        <form>
+            <!-- Start a form for user input. -->
+            <h1>Contact &amp; Inquiries</h1>
+            <!-- Display a heading for the contact section. -->
+            <br><br>
+            <!-- Insert line breaks for spacing. -->
+            <p> I'm looking forward to your message.</p>
+            <!-- Provide a message welcoming users to send inquiries. -->
+            <p>You can either use this contact form or write me directly at
+                <a href="mailto:elisabeth@gmail.de">elisabeth@gmail.com</a></p>
+            <!-- Offer the option to contact via email with a link. -->
+            <p>I'll try to respond as soon as possible.</p>
+            <!-- Mention a commitment to quick responses. -->
+            <p>Until then, I wish you a wonderful day!</p>
+            <!-- Extend a friendly wish to the user. -->
+            <p> Best regards, Your Elisabeth!</p>
+            <!-- Sign off the message with the sender's name. -->
+            <br>
+            <br>
+            <!-- Insert additional line breaks for spacing. -->
+            <div class="row">
+                <!-- Create a row container for form inputs. -->
+                <div class="input-group">
+                    <!-- Define an input group for a text field. -->
+                    <input type="text" id="name" required>
+                    <!-- Create a text input field for the user's name, marked as required. -->
+                    <label for="name">Your Name</label>
+                    <!-- Label for the name input field. -->
+                </div>
+                <div class="input-group">
+                    <!-- Define another input group for a text field. -->
+                    <input type="text" id="number" required>
+                    <!-- Create a text input field for the user's phone number, marked as required. -->
+                    <label for="number">Phone No.</label>
+                    <!-- Label for the phone number input field. -->
+                </div>
+            </div>
+            <!-- Close the row container. -->
+            <div class="input-group">
+                <!-- Create an input group for a text field. -->
+                <input type="text" id="email" required>
+                <!-- Create a text input field for the user's email address, marked as required. -->
+                <label for="email">Email Id</label>
+                <!-- Label for the email input field. -->
+            </div>
+            <div class="input-group">
+                <!-- Create an input group for a text area (multiline text input). -->
+                <textarea id="message" rows="8" required></textarea>
+                <!-- Create a text area for the user's message, marked as required and with 8 rows. -->
+                <label for="message">Your Message</label>
+                <!-- Label for the message text area. -->
+            </div>
+            <button type="submit">SUBMIT</button>
+            <!-- Create a submit button for the form. -->
+        </form>
+        <!-- Close the form. -->
     </div>
-    
-    <div class="input-group">
-        <input type="text" id="email" required>
-        <label for="email">Email Id</label>
-    </div>
-    <div class="input-group">
-        <textarea id="message" rows="8" required></textarea>
-        <label for="message">Your Message</label>
-    </div>
-    <button type="submit">SUBMIT</button>
-</form>
-
-    </div>
+    <!-- Close the container div. -->
 </body>
 </html>
