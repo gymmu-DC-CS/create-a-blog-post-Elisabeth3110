@@ -68,7 +68,9 @@ nav {
   text-decoration: none;
   color: white; 
 }
-
+.hauptmenu li a:hover {
+  color: red; 
+}
 /* Submenu style */
 .submenu {
   display: none;
@@ -195,4 +197,7 @@ color: #383B40;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+a{
+  text-decoration: none;
 }
